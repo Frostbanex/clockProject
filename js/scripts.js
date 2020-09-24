@@ -1,5 +1,6 @@
 const clock = document.getElementById("time");
 var crono = false;
+var intervalCrono = null;
 var hours = "00";
 var minutes = "00";
 var seconds = "00";
@@ -30,10 +31,15 @@ function printTime() {
 }
 
 function startTime() {
-	crono = true;
 	if (crono == true) {
-		setInterval(cronometer, 1000);
+		crono = false;
+		clearInterval(intervalCrono);
+	} else {
+		crono = true;
+		intervalCrono = setInterval(cronometer, 1000);
+		console.log("gg");
 	}
+
 	console.log(crono);
 }
 
