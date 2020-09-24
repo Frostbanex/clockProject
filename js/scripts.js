@@ -7,7 +7,7 @@ var seconds = "00";
 var secondsSum = 0;
 var minutesSum = 0;
 var hoursSum = 0;
-console.log(crono);
+const startButton = document.getElementById("startIcon");
 
 function printTime() {
 	var time = new Date();
@@ -34,13 +34,12 @@ function startTime() {
 	if (crono == true) {
 		crono = false;
 		clearInterval(intervalCrono);
+		console.log("Cronómetro desactivado");
 	} else {
 		crono = true;
 		intervalCrono = setInterval(cronometer, 1000);
-		console.log("gg");
+		console.log("Cronómetro activado");
 	}
-
-	console.log(crono);
 }
 
 function cronometer() {
@@ -77,5 +76,3 @@ function cronometer() {
 	}
 	clock.innerHTML = hours + ":" + minutes + ":" + seconds;
 }
-
-//setInterval(printTime, 1000);

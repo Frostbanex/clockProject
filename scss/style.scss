@@ -10,15 +10,18 @@ body {
 	background-color: $bg-color;
 	font-family: "Inter", sans-serif;
 }
-
+button {
+	background-color: white;
+	border: none;
+}
 .feather {
 	width: 24px;
 	height: 24px;
-	stroke: white;
+	stroke: black;
 	stroke-width: 2;
 	stroke-linecap: round;
 	stroke-linejoin: round;
-	fill: white;
+	fill: black;
 }
 
 nav {
@@ -39,9 +42,15 @@ nav {
 	}
 	.controls {
 		button {
-			width: 60px;
-			height: 30px;
-			background-color: black;
+			background-color: #a0acff;
+			margin-top: 10px;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			svg {
+				position: relative;
+				left: 1px;
+			}
 		}
 	}
 }
