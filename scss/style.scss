@@ -11,17 +11,17 @@ body {
 	font-family: "Inter", sans-serif;
 }
 button {
-	background-color: white;
+	background-color: $default-button-color;
 	border: none;
 }
 .feather {
 	width: 24px;
 	height: 24px;
-	stroke: black;
+	stroke: white;
 	stroke-width: 2;
 	stroke-linecap: round;
 	stroke-linejoin: round;
-	fill: black;
+	fill: white;
 }
 
 nav {
@@ -38,11 +38,11 @@ nav {
 		margin-top: 10vmin;
 		font-weight: 700;
 		font-size: 6em;
-		color: white;
+		color: $time-color;
 	}
 	.controls {
 		button {
-			background-color: #a0acff;
+			background-color: $start-button-bg;
 			margin-top: 10px;
 			width: 50px;
 			height: 50px;
@@ -50,6 +50,8 @@ nav {
 			svg {
 				position: relative;
 				left: 1px;
+				fill: #121212;
+				stroke: #121212;
 			}
 		}
 	}
