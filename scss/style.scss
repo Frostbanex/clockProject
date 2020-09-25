@@ -56,3 +56,9 @@ nav {
 		}
 	}
 }
+
+@media (prefers-color-scheme: light) {
+	svg {
+		fill: black;
+	}
+}

@@ -7,7 +7,6 @@ var seconds = "00";
 var secondsSum = 0;
 var minutesSum = 0;
 var hoursSum = 0;
-const startButton = document.getElementById("startIcon");
 
 function printTime() {
 	var time = new Date();
